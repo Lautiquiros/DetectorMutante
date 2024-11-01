@@ -103,7 +103,7 @@ GET /stats
 El proyecto está desplegado en Render y puede accederse a través de:
 
 ```
-linkRender
+https://detectormutante-1.onrender.com
 ```
 ## Diagramas de secuencia 📊
 Aquí se encuentran los diagramas de secuencia que muestran el flujo de análisis del ADN y las interacciones entre los componentes.
