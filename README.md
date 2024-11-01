@@ -50,7 +50,7 @@ POST /mutant
 }
 ```
 
-### 📊 Estadísticas
+###  Estadísticas
 
 ```http
 GET /stats
@@ -68,7 +68,7 @@ GET /stats
 
 ## 📊 Ejemplos de ADN
 
-### ✨ Matriz MUTANTE
+###  Matriz MUTANTE
 
 ```json
 {
@@ -83,7 +83,7 @@ GET /stats
 }
 ```
 
-### 👤 Matriz NO MUTANTE
+###  Matriz NO MUTANTE
 
 ```json
 {
