@@ -108,11 +108,12 @@ linkRender
 ## Diagramas de secuencia 📊
 Aquí se encuentran los diagramas de secuencia que muestran el flujo de análisis del ADN y las interacciones entre los componentes.
 <p align="center">
-  <img src="src="https://github.com/user-attachments/assets/bb545cb6-e8f4-48fa-b985-5b7e19259fe5" alt="Descripción de la imagen 1" width="400" style="margin-bottom: 20px;">
+  <img src="https://github.com/user-attachments/assets/bb545cb6-e8f4-48fa-b985-5b7e19259fe5" alt="Imagen 1" width="400" style="margin-bottom: 20px;">
 </p>
 <p align="center">
-  <img src="src="https://github.com/user-attachments/assets/5a6a2446-e79c-462e-a73a-08ad6d8c9e34" alt="Descripción de la imagen 2" width="400">
+  <img src="https://github.com/user-attachments/assets/5a6a2446-e79c-462e-a73a-08ad6d8c9e34" alt="Imagen 2" width="400">
 </p>
+
 
 ## Pruebas con Jmeter 🧪
 Para asegurar la estabilidad y rendimiento del sistema, se realizaron pruebas con JMeter simulando diferentes cantidades de peticiones concurrentes.
