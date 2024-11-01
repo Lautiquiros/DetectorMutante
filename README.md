@@ -117,4 +117,7 @@ Aquí se encuentran los diagramas de secuencia que muestran el flujo de análisi
 
 ## Pruebas con Jmeter 🧪
 Para asegurar la estabilidad y rendimiento del sistema, se realizaron pruebas con JMeter simulando diferentes cantidades de peticiones concurrentes.
+###1000 Peticiones
+![image](https://github.com/user-attachments/assets/66e5b2ab-4bb6-4376-977a-1bb4d1528e08)
+
 
