@@ -1,24 +1,27 @@
-# 🧬 MutantDetectorML
-
-[![Render Deploy](https://img.shields.io/badge/Render-Deploy-green)](https://mutantdetectorml.onrender.com)
-[![API Status](https://img.shields.io/badge/API-Active-brightgreen)](https://mutantdetectorml.onrender.com/stats)
-[![DNA Analysis](https://img.shields.io/badge/DNA-Analysis-blue)](https://mutantdetectorml.onrender.com/mutant)
+# Detector de Mutantes 🧬
 
 ## 🎯 Descripción
 
-Sistema revolucionario desarrollado para Magneto que permite identificar mutantes mediante el análisis de secuencias de ADN. La plataforma procesa matrices genéticas para detectar patrones específicos que determinan si un individuo posee el gen mutante, basándose en la repetición de secuencias en múltiples direcciones.
+Magneto busca reclutar mutantes para enfrentarse a los X-Men y te ha encargado la creación de un sistema que permita detectar si un humano es mutante a partir de su secuencia de ADN. Este proyecto consiste en desarrollar un programa que detecte mutantes mediante un análisis de las secuencias genéticas.
 
-## 🔬 Especificaciones Técnicas
 
-La detección se realiza sobre una matriz cuadrada de ADN donde cada elemento representa una base nitrogenada. El sistema procesa únicamente las bases (A,T,C,G), analizando la presencia de secuencias repetitivas que indican la presencia del gen mutante.
+## Funcionamiento del Programa 🚀
 
-## ⚡ Características Principales
+El programa recibe como entrada un array de Strings que representa cada fila de una matriz de (NxN) con la secuencia de ADN. Las letras que componen estos strings solo pueden ser: A, T, C, G, que corresponden a las bases nitrogenadas del ADN.
 
-- Análisis multidireccional de ADN (horizontal, vertical y diagonal)
-- Detección de secuencias mutantes (4 elementos idénticos)
-- Procesamiento de matrices desde 4x4 hasta 15x15
-- Sistema de verificación de integridad matricial
-- Base de datos para registro histórico de análisis
+El ADN se considera mutante si se encuentran más de una secuencia de cuatro letras iguales consecutivas, en cualquiera de las siguientes direcciones:
+
+Horizontal
+Vertical
+Diagonal (principal y secundaria)
+
+## Ejecución del Algoritmo
+Recepción del ADN: El usuario ingresa una matriz NxN que representa la secuencia de ADN.
+Verificación: Se aplica una lógica para detectar si existen secuencias consecutivas de cuatro letras iguales. Esta verificación se realiza recorriendo:
+Las filas de la matriz.
+Las columnas de la matriz.
+Las diagonales principales y secundarias.
+Resultado: Si se encuentran más de una secuencia válida, el ADN se clasifica como mutante. De lo contrario, se clasifica como humano.
 
 ## 📝 Método Principal
 
@@ -26,23 +29,9 @@ La detección se realiza sobre una matriz cuadrada de ADN donde cada elemento re
 boolean isMutant(String[] dna)
 ```
 
-El método recibe un array de Strings que representa la matriz de ADN a analizar. Cada string debe contener únicamente los caracteres A, T, C, G.
+## Endpoints 🔗
 
-## 🛠️ Funcionalidades Core
-
-| Funcionalidad | Descripción |
-|---------------|-------------|
-| Análisis ADN | Verificación bidimensional completa |
-| Detección | Sistema de identificación de ADN duplicado |
-| Validación | Control de dimensiones matriciales |
-| Integridad | Verificación de datos entrantes |
-| Registro | Historial completo de análisis |
-
-## 🌐 API Endpoints
-
-### 🧪 Análisis de ADN
-
-```http
+``http
 POST /mutant
 ```
 
@@ -71,9 +60,9 @@ GET /stats
 
 ```json
 {
-    "count_mutant_dna": 50,
-    "count_human_dna": 150,
-    "ratio": 0.33
+    "count_mutant_dna": 40,
+    "count_human_dna": 100,
+    "ratio": 0.4
 }
 ```
 
@@ -109,16 +98,17 @@ GET /stats
 }
 ```
 
-## 🚀 Despliegue
+## URL de despliegue 🌐
 
 El proyecto está desplegado en Render y puede accederse a través de:
 
 ```
-https://mutantdetectorml.onrender.com
+linkRender
 ```
+## Diagramas de secuencia 📊
+Aquí se encuentran los diagramas de secuencia que muestran el flujo de análisis del ADN y las interacciones entre los componentes.
+![image](https://github.com/user-attachments/assets/5a6a2446-e79c-462e-a73a-08ad6d8c9e34)
+![image](https://github.com/user-attachments/assets/bb545cb6-e8f4-48fa-b985-5b7e19259fe5)
+## Pruebas con Jmeter 🧪
+Para asegurar la estabilidad y rendimiento del sistema, se realizaron pruebas con JMeter simulando diferentes cantidades de peticiones concurrentes.
 
-## 📫 Contacto
-
-Si tienes preguntas o sugerencias sobre el proyecto, no dudes en enviarme un correo a maxidoe2004@gmail.com
-
-⚡️ Desarrollado con 💙 para Magneto
