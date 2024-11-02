@@ -124,7 +124,7 @@ Para asegurar la estabilidad y rendimiento del sistema, se realizaron pruebas co
 
 Clona el repositorio:
    ```bash
-   git clone https://github.com/Lautiquiros/DetectorMutante/tree/main
+   git clone https://github.com/Lautiquiros/DetectorMutante
    cd DetectorMutante
    ```
 ## Para verificar que las dependencias se instalaron correctamente
