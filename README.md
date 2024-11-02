@@ -122,16 +122,16 @@ Para asegurar la estabilidad y rendimiento del sistema, se realizaron pruebas co
 
 # Instalación
 
-1. Clona el repositorio:
+Clona el repositorio:
    ```bash
    git clone 
    cd DetectorMutante
    ```
-   ## Para verificar que las dependencias se instalaron correctamente
+## Para verificar que las dependencias se instalaron correctamente
    ```
    ./gradlew build
    ```
-   # Ejecución En Local
+# Ejecución En Local
 Ejecuta H2
 Levanta la aplicación  (localhost:8080)
 ```
