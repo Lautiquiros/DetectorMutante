@@ -120,4 +120,26 @@ Para asegurar la estabilidad y rendimiento del sistema, se realizaron pruebas co
 ### 1000 Peticiones
 ![image](https://github.com/user-attachments/assets/66e5b2ab-4bb6-4376-977a-1bb4d1528e08)
 
+# Instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone 
+   cd DetectorMutante
+   ```
+   ## Para verificar que las dependencias se instalaron correctamente
+   ```
+   ./gradlew build
+   ```
+   # Ejecución En Local
+Ejecuta H2
+Levanta la aplicación  (localhost:8080)
+```
+./gradlew bootRun
+```
+# Pruebas
+Ejecutar tests:
+```
+./gradlew test
+```
 
